@@ -12,6 +12,7 @@ console.log('tip chargé')
     <div className="App-TipCalculator">
       <Logo width="90px" />
       <CardCalculator />
+      <p>Asmaa</p>
     </div>
   )
 }
