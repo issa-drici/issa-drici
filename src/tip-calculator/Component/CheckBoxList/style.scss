@@ -1,0 +1,18 @@
+.checkbox-inputs {
+  margin: 45px 0 30px;
+}
+.label {
+  font-size: 14px;
+  text-align: left;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.wrapper-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+
+  justify-content: space-between;
+}

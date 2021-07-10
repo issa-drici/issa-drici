@@ -1,0 +1,41 @@
+.custom {
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  font-weight: 700;
+  font-family: Space Mono;
+  text-align: right;
+  padding: 0 15px;
+
+  width: 85px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: hsla(172, 67%, 45%, 0.447);
+    color: hsl(183, 100%, 15%);
+  }
+
+  &::placeholder {
+  
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  -moz-appearance: textfield;
+
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin:0;
+	}
+}

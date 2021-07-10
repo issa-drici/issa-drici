@@ -1,7 +1,55 @@
 .result {
-  width: 413px;
-  height: 417px;
+  width: 333px;
+  height: 337px;
   background: hsl(183, 100%, 15%);
+  padding: 40px;
+  position: relative;
 
   border-radius: 21px;
+
+  .result-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+    .result-label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        font-size: 17px;
+        color: hsl(0, 0%, 100%);
+      }
+      span {
+        font-size: 13px;
+        color: hsl(184, 14%, 56%);
+      }
+    }
+    .result-value {
+      font-weight: 700;
+      font-size: 35px;
+      color: hsl(172, 67%, 45%);
+    }
+  }
+
+  .reset-button {
+    position: absolute;
+    bottom: 40px;
+    transform: translateX(-50%);
+
+    width: 333px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: none;
+
+    font-family: Space Mono;
+    font-size: 21px;
+    font-weight: 700;
+
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
 }
