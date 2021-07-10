@@ -1,5 +1,5 @@
 import React from 'react'
-import './Result.scss'
+import './style.scss'
 
 const Result = () => {
   return (

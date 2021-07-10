@@ -1,5 +1,5 @@
 import React from 'react'
-import './CardCalculator.scss'
+import './style.scss'
 
 import {ReactComponent as Dollar} from '../../assets/icon-dollar.svg'
 
