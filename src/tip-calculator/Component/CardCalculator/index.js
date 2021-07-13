@@ -26,7 +26,6 @@ const CardCalculator = () => {
     setBill(0)
     setTip(0.5)
     setNbPeople(0)
-
   }
 
   return (

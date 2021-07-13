@@ -1,0 +1,153 @@
+.introduction-section {
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(255.85deg, #1B1B1B 4.72%, #3F3F3F 53.42%, #3F3F3F 54.14%, #1A1A1A 100.25%);
+}
+
+.hero-banner {
+  color: #FFF;
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // left: 15%;
+
+  p {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+
+    .i-am {
+      font-weight: 200;
+    }
+
+    .firstname {
+      color: #FA7A19;
+    }
+  }
+
+  .subtitle {
+    font-size: 19px;
+  }
+
+  ul {
+    display: flex;
+    padding: 0 20px;
+    list-style-type: none;
+    
+    li {
+      margin-right: 50px;
+      position: relative;
+      font-weight: 200;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #FA7A19;
+      }
+    }
+  }
+
+  button {
+    border: solid 2px #FFF;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    margin-right: 19px;
+    margin-top: 65px;
+    background: transparent;
+    color: #FFF;
+    font-size: 15px;
+    padding: 7px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .hire-me {
+    background: #FA7A19;
+    border-color: #FA7A19;
+    position: relative;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      background: url('../../assets/hand-right.png') center / cover;
+      width: 83px;
+      height: 38px;
+      position: absolute;
+      left: -90px;
+      opacity: 0;
+      transition: opacity linear .5s;
+    }
+
+    &:hover {
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .see-projects {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      background: url('../../assets/hand-top.png') center / cover;
+      width: 43px;
+      height: 86px;
+      position: absolute;
+      bottom: -93px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      opacity: 0;
+
+      transition: opacity linear .5s;
+    }
+
+    &:hover {
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  
+}
+
+.hero {
+  display: flex;
+  width: 70%;
+  max-width: 1075px;
+  height: calc(100vh - 115px);
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  
+  .hero-img {
+    flex: none;
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: solid 7px #FA7A19;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      z-index: 55;
+    }
+  }
+}
+

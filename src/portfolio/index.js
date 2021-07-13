@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 
-import { Link } from 'react-router-dom'
+import Introduction from './Component/Introduction'
+import AboutMe from './Component/AboutMe'
+import MyProjects from './Component/MyProjects'
 
 
 const Home = () => {
+  const [page, setPage] = useState("introduction")
+
+  function pageView(page) {
+    if (page === "introduction") {
+      return <Introduction />
+    } else if (page === "aboutme") {
+      return <AboutMe />
+    } else if (page === "myprojects") {
+      return <MyProjects />
+    }
+  }
+
   return (
-    <div>
-      <Link to="/Projects/TipCalculator">Tip Calculator</Link>
+    <div className="portfolio">
+      {pageView(page)}
     </div>
   )
 }

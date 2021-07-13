@@ -20,7 +20,7 @@ const Result = ({ bill, tip, nbPeople, resetClick }) => {
         </div>
         <p className="result-value">{'$' + ((bill + (bill * tip)) / nbPeople).toFixed(2)}</p>
       </div>
-      <button onClick={resetClick} className="reset-button" type="button"> RESET</button>
+      <button onClick={resetClick} className="reset-button" type="button">RESET</button>
     </div>
   )
 }

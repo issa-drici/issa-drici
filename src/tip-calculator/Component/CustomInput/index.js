@@ -1,10 +1,10 @@
 import React from 'react'
 import './style.scss'
 
-const CustomInput = () => {
+const CustomInput = ({ onFocus, handleCustomChange }) => {
   return (
     <div>
-      <input type="number" className="custom" placeholder="Custom"></input>
+      <input type="number" className="custom" placeholder="Custom" onFocus={onFocus} onChange={handleCustomChange}></input>
     </div>
   )
 }
