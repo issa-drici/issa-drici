@@ -11,7 +11,7 @@ const Introduction = () => {
       <div className="hero">
         <div className="hero-banner">
           <p>Hello,</p>
-          <h3><span className="i-am">Je suis</span> <span className="firstname">Issa</span> Drici</h3>
+          <h3><span className="i-am">Je suis</span> <span className="firstname animate">I</span><span className="firstname animate">s</span><span className="firstname animate">s</span><span className="firstname animate">a</span> <span className="animate">D</span><span className="animate">r</span><span className="animate">i</span><span className="animate">c</span><span className="animate">i</span></h3>
           <p className="subtitle">Développeur Web | Front-End | React 🚀</p>
           <ul>
             <li>Front-End</li>

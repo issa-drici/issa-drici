@@ -4,3 +4,12 @@
 
   background: linear-gradient(255.85deg, #1B1B1B 4.72%, #3F3F3F 53.42%, #3F3F3F 54.14%, #1A1A1A 100.25%);
 }
+
+.list-cards {
+  display: flex;
+  width: 70%;
+  max-width: 1075px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px auto;
+}

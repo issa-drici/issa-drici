@@ -3,7 +3,7 @@ import './style.scss'
 
 import {ReactComponent as Logo} from '../../assets/logo-issa.svg'
 
-const Header = ({active}) => {
+const Header = ({ active }) => {
   return (
     <div className="header">
       <Logo width="182px" />
