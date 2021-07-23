@@ -4,6 +4,7 @@ import './style.scss'
 import Introduction from './Component/Introduction'
 import AboutMe from './Component/AboutMe'
 import MyProjects from './Component/MyProjects'
+import Header from './Component/Header'
 
 
 const Home = () => {
@@ -19,8 +20,14 @@ const Home = () => {
     }
   }
 
+  const handleClickPage = page => {
+    setPage(page)
+  }
+
   return (
+    
     <div className="portfolio">
+      <Header active={page} clickPage={handleClickPage} />
       {pageView(page)}
     </div>
   )

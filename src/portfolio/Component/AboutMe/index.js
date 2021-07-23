@@ -6,7 +6,6 @@ import './style.scss'
 const AboutMe = () => {
   return (
     <div className="aboutme-section">
-      <Header active="aboutme" />
     </div>
   )
 }

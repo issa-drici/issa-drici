@@ -7,7 +7,6 @@ import Header from '../Header'
 const Introduction = () => {
   return (
     <div className="introduction-section">
-      <Header active="introduction" />
       <div className="hero">
         <div className="hero-banner">
           <p>Hello,</p>

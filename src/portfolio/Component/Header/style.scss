@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   min-width: 900px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 
   ul {
     display: flex;

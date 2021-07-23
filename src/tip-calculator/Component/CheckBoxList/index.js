@@ -6,13 +6,17 @@ import CustomInput from '../CustomInput'
 
 const CheckBoxList = ({handleTipChange}) => {
   const [checkActive, setCheckActive] = useState("5")
+  const [customInput, setCustomInput] = useState()
 
   function valueClick(value) {
+    setCustomInput(0)
     handleTipChange(value)
     setCheckActive(value)
+    console.log(customInput)
   }
 
   function handleCustomChange(e) {
+    setCustomInput(e.target.value)
     handleTipChange(e.target.value)
   }
 
@@ -30,7 +34,7 @@ const CheckBoxList = ({handleTipChange}) => {
         <Checkbox valueClick={valueClick} classActive={checkActive === "15" ? "checkbox active-checkbox" : "checkbox"} value="15" text="15%" />
         <Checkbox valueClick={valueClick} classActive={checkActive === "25" ? "checkbox active-checkbox" : "checkbox"} value="25" text="25%" />
         <Checkbox valueClick={valueClick} classActive={checkActive === "50" ? "checkbox active-checkbox" : "checkbox"} value="50" text="50%" />
-        <CustomInput onFocus={onFocus} handleCustomChange={handleCustomChange} />
+        <CustomInput onFocus={onFocus} handleCustomChange={handleCustomChange} customInput={customInput} />
       </div>
     </div>
     </div>

@@ -5,12 +5,9 @@
   background: linear-gradient(255.85deg, #1B1B1B 4.72%, #3F3F3F 53.42%, #3F3F3F 54.14%, #1A1A1A 100.25%);
 }
 
+
 .hero-banner {
   color: #FFF;
-  // position: absolute;
-  // top: 50%;
-  // transform: translateY(-50%);
-  // left: 15%;
 
   p {
     font-size: 2rem;
@@ -131,7 +128,7 @@
   display: flex;
   width: 70%;
   max-width: 1075px;
-  height: calc(100vh - 115px);
+  height: 100vh;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -184,6 +181,6 @@
   }
 }
 
-.hero-banner {
-  animation: 10s infinite alternate ease-in-out cloud;
-}
+// .hero-banner {
+//   animation: 10s infinite alternate ease-in-out cloud;
+// }
