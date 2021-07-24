@@ -12,7 +12,6 @@ const Input = ({id, icon, label, handleBillChange, handlePeopleChange}) => {
         {icon === 'dollar' ? <Dollar className="icon" /> : <Person className="icon" />}
         <input type="number" className="input-number" placeholder="0" onChange={ id === "bill" ? handleBillChange : handlePeopleChange} ></input>
       </div>
-     
     </>
   )
 }
