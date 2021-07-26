@@ -1,11 +1,3 @@
-.introduction-section {
-  width: 100vw;
-  height: 100vh;
-
-  background: linear-gradient(255.85deg, #1B1B1B 4.72%, #3F3F3F 53.42%, #3F3F3F 54.14%, #1A1A1A 100.25%);
-}
-
-
 .hero-banner {
   color: #FFF;
 
@@ -35,6 +27,10 @@
     display: flex;
     padding: 0 20px;
     list-style-type: none;
+
+    div {
+      display: flex;
+    }
     
     li {
       margin-right: 50px;
@@ -174,13 +170,97 @@
 
 @keyframes cloud {
   0% {
-    transform: translate(-50px, -50px);
+    transform: translate(5px, -5px);
+  }
+  20% {
+    transform: translate(5px, 5px);
+  }
+  40% {
+    transform: translate(0px, -5px);
+  }
+  60% {
+    transform: translate(-5px, 5px);
+  }
+  80% {
+    transform: translate(-5px, -5px);
   }
   100% {
-    transform: translate(150px, 150px);
+    transform: translate(5px, 5px);
   }
 }
 
-// .hero-banner {
-//   animation: 10s infinite alternate ease-in-out cloud;
-// }
+.hero-banner {
+  animation: 10s infinite alternate ease-in-out cloud;
+}
+
+@media screen and (max-width: 760px) {
+  .introduction-section {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+
+    .hero {
+      flex-direction: column-reverse;
+      max-width: none;
+      height: auto;
+      justify-content: start;
+
+      .hero-banner {
+        max-width: 300px;
+
+        p {
+          font-size: 1rem;
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        .subtitle {
+          font-size: 13.5px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 300px;
+          min-width: 275px;
+
+          li {
+            font-size: 14px;
+            margin-right: 0;
+          }
+
+          div {
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 9px;
+          }
+        }
+
+        .buttons {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          button {
+            font-size: 13px;
+            padding: 5px 11px;
+            margin: 20px 0 0 0;
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .hero-img {
+        width: 300px;
+        height: 300px;
+        margin: 40px 0 75px 0;
+      }
+    }
+  }
+}
