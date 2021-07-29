@@ -13,7 +13,7 @@ function App() {
             <Portfolio />
           </Route>
 
-          <Route exact path="/Projects/TipCalculator">
+          <Route exact path="/projects/tip-calculator">
             <TipCalculator />
           </Route>
         </Switch>

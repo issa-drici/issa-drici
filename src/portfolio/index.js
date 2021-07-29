@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.scss'
 
 import Introduction from './Component/Introduction'
@@ -25,6 +25,8 @@ const Home = () => {
   const handleClickPage = page => {
     setPage(page)
   }
+
+  useEffect(() => document.title = 'Développeur Front-End - Issa Drici')
 
   return (
     
