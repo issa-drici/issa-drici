@@ -6,7 +6,7 @@ import {ReactComponent as Logo} from '../../assets/logo-issa.svg'
 const Header = ({ active, clickPage, contact }) => {
   return (
     <div className="header">
-      <Logo />
+      <Logo onClick={() => clickPage("introduction")} />
         <nav>
         <ul>
           <li className={active === "introduction" ? "li-active" : ""} onClick={() => clickPage("introduction")}>Introduction</li>

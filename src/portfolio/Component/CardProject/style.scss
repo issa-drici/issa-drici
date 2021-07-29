@@ -86,9 +86,17 @@
       font-weight: 700;
       line-height: 23px;
 
-      margin: 0 0 11px 0;
+      margin: 11px 0 11px 0;
 
       text-shadow: 2px 2px 0px #FA7A19;
     }
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .cardProject {
+    width: 100%;
+    height: auto;
+    margin: 21px 0;
   }
 }

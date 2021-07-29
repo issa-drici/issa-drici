@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.scss'
 
 import Close from '../../assets/close.png'
@@ -6,10 +6,24 @@ import Close from '../../assets/close.png'
 import $ from 'jquery'
 
 const Contact = ({ closeContact }) => {
+  const [isOpen, setIsOpen] = useState(true)
+
+  useEffect(() => {
+    if (isOpen) {
+    document.body.style.position = 'fixed';
+    } else {
+    document.body.style.position = ''
+    }
+  })
+
   return (
     <div className="contact" onClick={(e) => {
+
+      // Fermeture de la modal de contact en cliquant sur l'espace noir autour
+      
       if(!($(e.target)[0] !== $('.contact').[0])) {
         closeContact()
+        setIsOpen(false)
       }
     }}>
       <div className="container-contact">
