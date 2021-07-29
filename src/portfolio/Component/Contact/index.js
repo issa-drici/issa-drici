@@ -31,15 +31,15 @@ const Contact = ({ closeContact }) => {
           <h4>Entrons en contact !</h4>
           <img src={Close} width="30px" alt="jhgdfs" onClick={closeContact}></img>
         </div>
-        <form>
+        <form name="contact" netlify>
           <label>Nom
-            <input type="text"></input>
+            <input type="text" name="name"></input>
           </label>
           <label>Email
-            <input type="email"></input>
+            <input type="email" name="email"></input>
           </label>
           <label>Message
-            <textarea></textarea>
+            <textarea name="message"></textarea>
           </label>
           <input type="submit" value="Envoyer"></input>
         </form>
