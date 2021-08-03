@@ -67,7 +67,7 @@ const Contact = ({ closeContact }) => {
           </label>
           <input type="submit" value="Envoyer" onClick={() => {
             if (!(toSend.from_email.length < 1 || toSend.from_name.length < 1 || toSend.message.length < 1)) {
-              console.log('d')
+              console.log('dd')
             }
           }}></input>
         </form>
