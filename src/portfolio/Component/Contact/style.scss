@@ -73,6 +73,10 @@
         cursor: pointer;
         transition: .3s linear;
 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
         &:hover {
           border: 3px solid #FA7A19;
           background: #FFF;
