@@ -26,7 +26,7 @@ const Contact = ({ closeContact }) => {
     setSuccess(true)
     setTimeout(()=> {
       closeContact()
-    }, 2000)
+    }, 3500)
   }
 
   const handleChange = (e) => {
