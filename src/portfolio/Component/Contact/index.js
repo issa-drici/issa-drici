@@ -8,6 +8,7 @@ import $ from 'jquery'
 
 const Contact = ({ closeContact }) => {
   const [isOpen, setIsOpen] = useState(true)
+  const [success, setSuccess] = useState(false)
   const [toSend, setToSend] = useState({
     from_name: '',
     from_email: '',
@@ -22,6 +23,7 @@ const Contact = ({ closeContact }) => {
       toSend,
       'user_IkpgAiSEBByRRMdrBISoW'
     )
+    setSuccess(true)
     setTimeout(()=> {
       closeContact()
     }, 2000)
@@ -29,7 +31,6 @@ const Contact = ({ closeContact }) => {
 
   const handleChange = (e) => {
     setToSend({...toSend, [e.target.name]: e.target.value })
-    console.log(toSend)
   }
 
   // useEffect(() => {
@@ -70,6 +71,8 @@ const Contact = ({ closeContact }) => {
               console.log('dd')
             }
           }}></input>
+          { success ? <p className="success">Votre message a bien été envoyé !</p> : null }
+          
         </form>
       </div>
     </div>
