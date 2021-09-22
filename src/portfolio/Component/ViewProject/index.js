@@ -29,8 +29,14 @@ const ViewProject = ({ closeView, project }) => {
       }
     }}>
       <div className="container-view-project">
-        <div className="slider"></div>
-        <p>{project.name}</p>
+        <div className="slider">
+          <img src={project.image[0]} alt="projectview"></img>
+        </div>
+        <div className="infos">
+          <h3>{project.name}</h3>
+          <p style={{ whiteSpace: "pre-line"}}>{project.description}</p>
+          <h4 className="project-technos">{project.technos}</h4>
+        </div>
       </div>
     </div>
   )
