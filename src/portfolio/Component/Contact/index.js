@@ -54,7 +54,7 @@ const Contact = ({ closeContact }) => {
       <div className="container-contact">
         <div className="header-form">
           <h4>Entrons en contact !</h4>
-          <img src={Close} width="30px" alt="jhgdfs" onClick={closeContact}></img>
+          <img src={Close} width="30px" alt="close" onClick={closeContact}></img>
         </div>
         <form name="contact" onSubmit={onSubmit}>
           <label>Nom*

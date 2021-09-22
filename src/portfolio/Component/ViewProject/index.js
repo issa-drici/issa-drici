@@ -29,6 +29,7 @@ const ViewProject = ({ closeView, project }) => {
       }
     }}>
       <div className="container-view-project">
+        <img src={Close} className="closeView" width="30px" alt="close" onClick={closeView}></img>
         <div className="slider">
           <img src={project.image[0]} alt="projectview"></img>
         </div>

@@ -60,9 +60,8 @@
         transition: linear .3s;
       }
 
-      .link-logo {
-        width: 25px;
-        fill: #FFF;
+      .moreDetails {
+        font-size: 33px;
         transition: linear .3s;
       }
 
@@ -70,7 +69,7 @@
         .project-name {
           text-shadow: 2px 2px 0px #FA7A19;
         }
-        .link-logo {
+        .moreDetails {
           filter: drop-shadow( 2px 2px 0px #FA7A19);
         }
       }
