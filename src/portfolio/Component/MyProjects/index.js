@@ -68,7 +68,7 @@ const MyProjects = () => {
       image: [speedpizza1, tipCalculator],
       name: "SpeedPizza",
       smallDescription: "Application de Gestion de Commandes.",
-      description: "Application Web clonée d’un auto Youtube puis personnalisée selon les besoins.\n\nSuite à une activité en tant que livreur de pizzas, j’ai ajouté des fonctionnalités à un code déjà produit sur des vidéos Youtube.\n\nAjout de fonctionnalités de récupérations de commandes et d’affichage dans un dashboard pour le livreur ainsi que le pizzaïolo.",
+      description: "Application Web clonée d’un tuto Youtube puis personnalisée selon les besoins.\n\nSuite à une activité en tant que livreur de pizzas, j’ai ajouté des fonctionnalités à un code déjà produit sur des vidéos Youtube.\n\nAjout de fonctionnalités de récupérations de commandes et d’affichage dans un dashboard pour le livreur ainsi que le pizzaïolo.",
       technos: "Javascript"
     },
     {
